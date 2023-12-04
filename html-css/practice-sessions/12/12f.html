@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(150, 71, 150);
+        height: 50px;
+        align-items: center;
+      }
+
+      .home {
+        font-weight: bold;
+        color: white;
+        padding-left: 10px;
+      }
+
+      .search-box {
+        width: 400px;
+        border: none;
+        border-radius: 15px;
+        height: 25px;
+        padding-left: 20px;
+      }
+
+      .download-button {
+        background-color: rgb(150, 71, 150);
+        color: white;
+        font-size: 12px;
+        border: 1px solid white;
+        padding: 5px 10px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="home">Home</div>
+      <div class="search">
+        <input type="text" placeholder="Search" class="search-box" />
+      </div>
+      <div class="download">
+        <button class="download-button">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

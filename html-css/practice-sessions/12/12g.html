@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .image img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+        margin-right: 10px;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .info {
+        width: 200px;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      .category,
+      .status {
+        color: gray;
+      }
+
+      .follow-button {
+        background-color: rgb(32, 32, 185);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="image"><img src="images/cat.jpg" /></div>
+      <div class="info">
+        <div class="name">oliver</div>
+        <div class="category">the cat</div>
+        <div class="status">popular</div>
+      </div>
+      <div class="follow">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="image"><img src="images/cat1.jpg" /></div>
+      <div class="info">
+        <div class="name">Mimi</div>
+        <div class="category">Sleepy Cat</div>
+        <div class="status">popular</div>
+      </div>
+      <div class="follow">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="image"><img src="images/dog.jpg" /></div>
+      <div class="info">
+        <div class="name">Rex</div>
+        <div class="category">Happy Dog</div>
+        <div class="status">popular</div>
+      </div>
+      <div class="follow">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+  </body>
+</html>
