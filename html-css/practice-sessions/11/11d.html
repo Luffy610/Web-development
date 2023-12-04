@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin: 0px;
+      }
+
+      .image img {
+        width: 160px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+
+      .mutual img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+
+      .mutual-friends {
+        color: gray;
+      }
+
+      .mutual {
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        align-items: center;
+        margin-bottom: 8px;
+        margin-left: 5px;
+      }
+
+      .add-friend-button {
+        padding: 5px 15px;
+        border: none;
+        color: white;
+        background-color: blue;
+        border-radius: 5px;
+      }
+
+      .add-friend {
+        margin-left: 5px;
+        padding-bottom: 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 160px 160px 160px;
+        column-gap: 10px;
+      }
+
+      .card {
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="card">
+        <div class="image">
+          <img src="images/cat.jpg" />
+        </div>
+        <div class="name">Oliver</div>
+        <div class="mutual">
+          <img src="images/dog.jpg" />
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+        <div class="add-friend">
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="images/cat1.jpg" />
+        </div>
+        <div class="name">Mimi</div>
+        <div class="mutual">
+          <img src="images/dog.jpg" />
+          <p class="mutual-friends">3 mutual friends</p>
+        </div>
+        <div class="add-friend">
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="images/dog.jpg" />
+        </div>
+        <div class="name">Rex</div>
+        <div class="mutual">
+          <img src="images/dog.jpg" />
+          <p class="mutual-friends">4 mutual friends</p>
+        </div>
+        <div class="add-friend">
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
