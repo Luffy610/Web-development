@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .div-1 {
+        background-color: lightpink;
+        display: flex;
+        align-items: center;
+        width: 100px;
+        justify-content: center;
+      }
+
+      .div-2 {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .flexbox {
+        height: 50px;
+        display: flex;
+      }
+
+      .nested {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox">
+      <div class="div-1">
+        <div class="nested">item-1</div>
+      </div>
+      <div class="div-2"></div>
+    </div>
+  </body>
+</html>

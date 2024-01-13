@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .image img {
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 23px;
+      }
+
+      .sender-name {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .time-stamp,
+      .message {
+        color: rgb(151, 150, 150);
+      }
+
+      .subject {
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 320px;
+      }
+
+      .mail {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .image {
+        margin-right: 10px;
+      }
+
+      .inbox {
+        border: none;
+        width: 390px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="inbox">
+      <div class="title">ALL INBOXES</div>
+      <div class="mail">
+        <div class="image">
+          <img src="images/cat.jpg" alt="profile picture" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="sender-name">Chewy Promotions</div>
+            <div class="time-stamp">4:58 PM</div>
+          </div>
+          <div class="subject">Biggest sales of the year!</div>
+          <div class="message"></div>
+          Hey there! We're writing to tell you about our...
+        </div>
+      </div>
+      <div class="mail">
+        <div class="image">
+          <img src="images/cat1.jpg" alt="profile picture" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="sender-name">Best Buy</div>
+            <div class="time-stamp">12:32 PM</div>
+          </div>
+          <div class="subject">Your Best Buy eReceipt</div>
+          <div class="message"></div>
+          Thank you for shopping at Best Buy, here is...
+        </div>
+      </div>
+      <div class="mail">
+        <div class="image">
+          <img src="images/dog.jpg" alt="profile picture" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="sender-name">Netflix</div>
+            <div class="time-stamp">9:00 AM</div>
+          </div>
+          <div class="subject">Here's what's coming soon to Netflix</div>
+          <div class="message"></div>
+          Brand new movies and shows, old favorites...
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

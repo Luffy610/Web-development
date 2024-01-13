@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .image img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+        margin-right: 10px;
+      }
+
+      .username {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .realname {
+        margin-left: 8px;
+        color: rgb(151, 151, 151);
+      }
+
+      .name {
+        display: flex;
+        align-items: center;
+      }
+
+      .tweet-content {
+        font-size: 16px;
+        width: 350px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      .link-preview {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(214, 214, 214);
+        width: 350px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .link-image {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(214, 214, 214);
+      }
+
+      .link-url {
+        color: rgb(111, 110, 110);
+      }
+
+      .link-details {
+        padding-left: 20px;
+        width: 200px;
+      }
+
+      .tweet {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tweet">
+      <div class="image">
+        <img src="images/cat.jpg" alt="cat image" />
+      </div>
+      <div class="content">
+        <div class="name">
+          <div class="username">supersimple.dev</div>
+          <div class="realname">@SuperSimpleDev</div>
+        </div>
+        <div class="tweet-content">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="link-preview">
+          <div class="link-image"></div>
+          <div class="link-details">
+            <div class="link-url">youtube.com</div>
+            <div class="link-subject">
+              Backend web development - a complete overview (2021)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
