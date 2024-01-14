@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 30000px;
+      }
+
+      .image img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+        margin-bottom: 5px;
+      }
+
+      .sidebar-1 {
+        background-color: rgb(33, 33, 33);
+        width: 60px;
+        padding-left: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .sidebar-2 {
+        position: fixed;
+        left: 70px;
+        background-color: rgb(55, 55, 55);
+        padding-left: 10px;
+        padding-right: 15px;
+        top: 0;
+        bottom: 0;
+        width: 150px;
+      }
+
+      .info {
+        color: white;
+        font-weight: bold;
+      }
+
+      .add,
+      .categories {
+        color: rgb(150, 150, 150);
+      }
+
+      .categories {
+        margin-bottom: 10px;
+      }
+
+      .add {
+        font-weight: bold;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar-1">
+      <div class="image"><img src="images/cat.jpg" alt="cat image" /></div>
+      <div class="image"><img src="images/cat1.jpg" alt="cat image" /></div>
+      <div class="image"><img src="images/dog.jpg" alt="dog image" /></div>
+    </div>
+    <div class="sidebar-2">
+      <div class="header">
+        <div class="info">INFO</div>
+        <div class="add">+</div>
+      </div>
+      <div class="categories"># new-videos</div>
+      <div class="categories"># updates</div>
+      <div class="categories"># faq</div>
+    </div>
+  </body>
+</html>
