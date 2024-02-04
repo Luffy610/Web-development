@@ -1,0 +1,21 @@
+body{
+    background-color: #00FA9A;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 5px 10px white;
+    font-size: 7vh;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-description{
+    
+}
