@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)">
+      Show cart
+    </button>
+    <button
+      onclick="cartQuantity += 4; console.log(`Cart Quantity: ${cartQuantity}`)"
+    >
+      +4
+    </button>
+    <button
+      onclick="cartQuantity += 5; console.log(`Cart Quantity: ${cartQuantity}`)"
+    >
+      +5
+    </button>
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>
