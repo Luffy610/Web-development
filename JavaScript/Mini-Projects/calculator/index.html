@@ -64,10 +64,11 @@
       </button>
     </p>
     <script>
-      let calculation = "";
+      let calculation = localStorage.getItem("calculationStorage") || "";
 
       function updateCalculation(char) {
         calculation += char;
+        localStorage.setItem("calculationStorage", calculation);
       }
     </script>
   </body>
