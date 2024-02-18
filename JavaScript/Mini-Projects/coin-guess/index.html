@@ -5,27 +5,27 @@
   </head>
 
   <body>
-    <button
-      onclick="
-    let number = Math.random();
-    let ans = '';
-    number <= 0.5 ? ans = 'Heads' : ans = 'Tails';
-    let guess = 'Heads';
-    (ans === guess) ? alert(`Guess : ${guess}, Ans: ${ans} You Win`) : alert(`Guess : ${guess}, Ans: ${ans} You Lose`)
-    "
-    >
-      Heads
-    </button>
-    <button
-      onclick="
-    let number = Math.random();
-    let ans = '';
-    number <= 0.5 ? ans = 'Heads' : ans = 'Tails';
-    let guess = 'Tails';
-    (ans === guess) ? alert(`Guess : ${guess}, Ans: ${ans} You Win`) : alert(`Guess : ${guess}, Ans: ${ans} You Lose`)
-    "
-    >
-      Tails
-    </button>
+    <button onclick="playGuess('Heads')">Heads</button>
+    <button onclick="playGuess('Tails')">Tails</button>
+    <script>
+      let score = {
+        wins: 0,
+        losses: 0,
+      };
+
+      function playGuess(guess) {
+        let number = Math.random();
+        let ans = "";
+        number <= 0.5 ? (ans = "Heads") : (ans = "Tails");
+        if (ans === guess) {
+          alert(`Guess : ${guess}, Ans: ${ans} You Win`);
+          score.wins += 1;
+        } else {
+          alert(`Guess : ${guess}, Ans: ${ans} You Lose`);
+          score.losses += 1;
+        }
+        console.log(score);
+      }
+    </script>
   </body>
 </html>
