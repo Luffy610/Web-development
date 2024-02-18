@@ -8,7 +8,7 @@
     <button onclick="playGuess('Heads')">Heads</button>
     <button onclick="playGuess('Tails')">Tails</button>
     <script>
-      let score = {
+      let score = JSON.parse(localStorage.getItem("scoreStorage")) || {
         wins: 0,
         losses: 0,
       };
@@ -20,9 +20,11 @@
         if (ans === guess) {
           alert(`Guess : ${guess}, Ans: ${ans} You Win`);
           score.wins += 1;
+          localStorage.setItem("scoreStorage", JSON.stringify(score));
         } else {
           alert(`Guess : ${guess}, Ans: ${ans} You Lose`);
           score.losses += 1;
+          localStorage.setItem("scoreStorage", JSON.stringify(score));
         }
         console.log(score);
       }
