@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <input type="text" placeholder="Name" class="nameInput" />
+    <button
+      onclick="
+      let name = document.querySelector('.nameInput');
+      document.querySelector('.display').innerHTML = `Your name is ${name.value}`;
+    "
+    >
+      Submit
+    </button>
+    <p class="display"></p>
+  </body>
+</html>

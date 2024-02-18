@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <button onclick="click('Heads')">Heads</button>
+    <button onclick="click('Tails')">Tails</button>
+    <p class="dom"></p>
+    <script>
+      function click(value) {
+        return (document.querySelector(
+          ".dom"
+        ).innerHTML = `You chose: ${value}`);
+      }
+    </script>
+  </body>
+</html>
