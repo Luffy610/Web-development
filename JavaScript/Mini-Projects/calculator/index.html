@@ -5,6 +5,7 @@
   </head>
 
   <body>
+    <p class="display"></p>
     <p>
       <button onclick="updateCalculation('1'); console.log(calculation);">
         1
@@ -65,10 +66,16 @@
     </p>
     <script>
       let calculation = localStorage.getItem("calculationStorage") || "";
+      displayCalculation();
 
       function updateCalculation(char) {
         calculation += char;
         localStorage.setItem("calculationStorage", calculation);
+        displayCalculation();
+      }
+
+      function displayCalculation() {
+        document.querySelector(".display").innerHTML = calculation;
       }
     </script>
   </body>
