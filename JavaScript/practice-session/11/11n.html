@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function countWords(list) {
+        let res = {};
+        for (let i = 0; i < list.length; i++) {
+          if (res[list[i]] === undefined) {
+            res[list[i]] = 1;
+          } else {
+            res[list[i]] += 1;
+          }
+        }
+        return res;
+      }
+
+      console.log(countWords(["apple", "grape", "apple", "apple"]));
+    </script>
+  </body>
+</html>

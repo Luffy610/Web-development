@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function search(list, search = "search") {
+        let index = -1;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i] === search) {
+            index = i;
+            break;
+          } else {
+            continue;
+          }
+        }
+        return index;
+      }
+
+      console.log(search(["hello", "world", "search", "good"]));
+      console.log(search(["not", "found"]));
+    </script>
+  </body>
+</html>

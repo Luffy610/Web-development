@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function unique(list) {
+        let res = [];
+        for (let i = 0; i < list.length; i++) {
+          if (res.includes(list[i])) {
+            continue;
+          } else {
+            res.push(list[i]);
+          }
+        }
+        return res;
+      }
+
+      console.log(unique(["green", "red", "blue", "red"]));
+      console.log(unique(["green", "red", "blue", "red"]));
+    </script>
+  </body>
+</html>
